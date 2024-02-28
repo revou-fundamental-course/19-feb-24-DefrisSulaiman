@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background-color: aliceblue;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 0.5rem;
+
+}
+
+header nav img {
+    width: 250px;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+header nav a:hover {
+    background-color: aqua;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.content-satu {
+    max-width: 100%;
+    height: 100vh;
+    padding: 3rem 4rem;
+    color: white;
+    font-size: larger;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+.content-satu .bagian-satu {
+    width: 100%;
+    background-color: transparent;
+    padding-block: 1rem;
+    transform: translateY(40px);
+}
+
+.content-satu .bagian-dua {
+    width: 100%;
+    max-height: 80%;
+    padding: 5px 30px;
+    overflow:auto;
+
+    border: 5px solid white;
+    border-radius: 30px;
+    
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(40px);
+}
+
+.content-satu .bagian-dua img {
+    width: 60%;
+    max-height: 70%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 20px;
+}
+
+.content-satu .bagian-dua .about {
+    width: 40%;
+    height: 70%;
+    max-height: 100%;
+    padding: 30px;
+    
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: transparent;
+}
+
+.content-satu .bagian-dua .about span {
+    background-color: yellow;
+    color: black;
+    padding: 3px;
+}
+
+.content-dua {
+    width: 100%;
+    height: 70vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: large;
+    padding-block: 5rem;
+}
+
+.content-dua h1 {
+    transform: translateY(40px);
+}
+
+.content-dua .konten {
+    height: 80%;
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    transform: translateY(40px);
+}
+
+.content-dua .bagian {
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-dua .bagian .profil {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    
+    background-color: transparent;
+    
+    border-radius: 50%;
+    
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    
+    border: 5px solid white;
+}
+
+.content-tiga {
+    width: 100%;
+    height: 60vh;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: transparent;
+}
+
+.content-tiga .konten {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.content-tiga h1 {
+    text-align: center;
+    background-color: transparent;
+}
+
+.content-tiga .input{
+    width: 50%;
+    height: 100%;
+
+    background-color: transparent;
+}
+
+.content-tiga .input .form-container {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: transparent;
+}
+
+.content-tiga .input .form-group label {
+    display: block;
+    padding-block: 5px;
+
+}
+
+.form-container .form-group {
+    padding: 5px;
+}
+
+.form-container .form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea, 
+.form-group button {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 0px 20px 20px 20px;
+    border: none;
+    text-indent: 7px;
+}
+
+.content-tiga .output {
+    width: 50%;
+    background-color: transparent;
+    padding: 30px;
+}
+
+.content-tiga .output fieldset {
+    height: 94%;
+    transform: translateY(16px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-tiga .output fieldset p {
+    padding: 20px;
+    text-align: left;
+
+}
+
+footer {
+    background-color: aliceblue;
+    font-size: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 1227px) {
+    .content-satu {
+        padding-block: 8rem;
+    }
+    .content-satu .bagian-dua {
+        padding-block: 3rem;
+    }
+    .content-satu .bagian-dua .about {
+        font-size: 16px;
+        padding: 2px;
+        padding-block: 1rem;
+    }
+    .content-satu .bagian-dua {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .content-satu .bagian-dua .about,
+    .content-satu .bagian-dua img {
+        width: 100%;
+        
+        
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .content-satu .bagian-dua{
+        padding-block: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 806px){
+    body {
+        overflow-x: hidden;
+    }
+    .content-satu {
+        padding-block: 8rem;
+    }
+    .content-satu .bagian-dua {
+        padding-block: 3rem;
+    }
+    .content-satu .bagian-dua .about {
+        font-size: 12px;
+        padding: 2px;
+        padding-block: 1rem;
+    }
+    .content-satu .bagian-dua {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .content-satu .bagian-dua .about,
+    .content-satu .bagian-dua img {
+        width: 100%;
+        
+        
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul {
+        text-align: center;
+    }
+    .content-dua {
+        height: 100vh;
+        padding-block: 12rem;
+    }
+    .content-dua h1 {
+        transform: translateY(-40px);
+    }
+    .content-dua .konten {
+        display: flex;
+        flex-direction: column;
+        padding-top: 9rem;
+    }
+    .content-dua .bagian {
+        padding: 20px;
+    }
+    .content-dua .bagian .profil {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .content-satu {
+        padding-block: 8rem;
+    }
+    .content-satu .bagian-dua {
+        padding-block: 3rem;
+    }
+    .content-satu .bagian-dua .about {
+        font-size: 12px;
+        padding: 2px;
+        padding-block: 1rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .content-satu {
+        padding-block: 8rem;
+    }
+    .content-satu .bagian-dua {
+        padding-block: 3rem;
+    }
+    .content-satu .bagian-dua .about {
+        font-size: 12px;
+        padding: 2px;
+        padding-block: 1rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .content-satu .bagian-dua {
+        padding-block: 2rem;
+    }
+    .content-satu .bagian-dua .about {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .content-satu {
+        padding-block: 9rem;
+    }
+    .content-satu .bagian-dua {
+        padding-block: 3rem;
+    }
+    .content-satu .bagian-dua .about {
+        font-size: 9px;
+        padding: 2px;
+        padding-block: 1rem;
+    }
+
+    .content-dua .konten .bagian .profil {
+        width: 150px;
+        height: 150px;
+    }
+}
